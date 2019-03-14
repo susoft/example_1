@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.soo.temp.repo.BookRepository;
+import com.soo.temp.service.BookMngtService;
 import com.soo.temp.vo.Book;
 
 @RestController
@@ -22,12 +23,19 @@ public class BookController {
 	
 	@Autowired
     private BookRepository bookRepository;
+	
+	@Autowired
+    private BookMngtService bookMngtService;
  
 	@RequestMapping("/getlist")
     public List<Book> getlist() {
         return bookRepository.findAll();
     }
 	
+	@RequestMapping("/getlistByMybatis")
+    public List<Book> getlistByMybatis() {
+        return bookMngtService.getAll();
+    }
 	
 	
 	

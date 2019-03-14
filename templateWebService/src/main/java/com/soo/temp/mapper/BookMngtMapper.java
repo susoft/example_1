@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.soo.temp.vo.EmpMngt;
+import com.soo.temp.vo.Book;
 
 @Mapper
-public interface EmpMngtMapper {
-	List<EmpMngt> selectAll();
+public interface BookMngtMapper {
+	List<Book> selectAll();
 }

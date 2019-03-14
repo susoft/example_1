@@ -6,16 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.soo.temp.mapper.EmpMngtMapper;
-import com.soo.temp.vo.EmpMngt;
+import com.soo.temp.mapper.BookMngtMapper;
+import com.soo.temp.vo.Book;
 
 @Service
 @Transactional
-public class EmpMngtService {
+public class BookMngtService {
 	@Autowired
-	EmpMngtMapper empMngtMapper;
+	BookMngtMapper bookMngtMapper;
 	
-	public List<EmpMngt> getAll() {
-        return empMngtMapper.selectAll();
+	public List<Book> getAll() {
+        return bookMngtMapper.selectAll();
     }
 }

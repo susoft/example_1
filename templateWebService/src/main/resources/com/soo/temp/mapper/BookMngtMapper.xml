@@ -3,11 +3,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.soo.temp.mapper.EmpMngtMapper">
+<mapper namespace="com.soo.temp.mapper.BookMngtMapper">
 
-    <select id="selectAll" resultType="empMngt">
-        SELECT *
-          FROM emp_mngt
+    <select id="selectAll" resultType="book">
+        SELECT * FROM book
     </select>
 
 </mapper>

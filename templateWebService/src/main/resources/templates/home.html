@@ -1,7 +1,21 @@
-<html>
-<head><title>Home Page</title></head>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+<title>home</title>
+<meta name="description" content="home">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
 <body>
+
 <h1>Hello !</h1>
 <p>Welcome to <span th:text="${appName}">Our App</span></p>
+
+<a href="/index" target="_blank">1. jpa를 이용한 db 조회하기.</a>
+<p>
+<a href="/indexMybatis" target="_blank">2. Mybatis를 이용한 db 조회하기.</a>
+
 </body>
 </html>
