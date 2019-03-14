@@ -19,7 +19,7 @@
 	
 	<properties>
 		<java.version>1.8</java.version>
-		<start-class>com.soo.family.templateWebServiceApplication</start-class>
+		<start-class>com.soo.temp.templateWebServiceApplication</start-class>
 	</properties>
 	
 	<dependencies>

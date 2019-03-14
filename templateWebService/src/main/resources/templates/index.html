@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
 <head>
 <title>test</title>
 <meta name="description" content="test">
@@ -35,29 +35,33 @@
         <tbody>
         </tbody>
     </table>
-    <script th:inline="javascript">
-    var modalesectiondata = null;
-    $(function(){
-        // datatable
-        var modalesectiontable = $("#table1").DataTable({
-            "bPaginate": true,
-            "bLengthChange": false,
-            "bFilter": true,
-            "bSort": false,
-            "bInfo": false,
-            "bAutoWidth": false,
-            "ajax": { url: 'getlist', dataSrc: '' },
-            "columns": [
-                { data: "title" },
-                { data: "author" },
-            ],
-            "columnDefs": [
-                { targets: 0, width: 60 },
-                { targets: 1, width: 180 },
-                { targets:'_all',className : 'dt-head-center' },
-            ]
-        });
-    })
-    </script>
+    
+    
+<script th:inline="javascript">
+var modalesectiondata = null;
+$(function(){
+    // datatable
+    var modalesectiontable = $("#table1").DataTable({
+        "bPaginate": true,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bSort": false,
+        "bInfo": false,
+        "bAutoWidth": false,
+        "ajax": { url: 'getlist', dataSrc: '' },
+        "columns": [
+            { data: "title" },
+            { data: "author" },
+        ],
+        "columnDefs": [
+            { targets: 0, width: 60 },
+            { targets: 1, width: 180 },
+            { targets:'_all',className : 'dt-head-center' },
+        ]
+    });
+})
+</script>
+
+
 </body>
 </html>
