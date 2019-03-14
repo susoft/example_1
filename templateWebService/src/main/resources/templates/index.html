@@ -3,6 +3,7 @@
 <head>
 <title>test</title>
 <meta name="description" content="test">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}" rel="stylesheet" />
 
@@ -25,6 +26,9 @@
 
 </head>
 <body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
     <table id="table1" class="table table-bordered table-hover table-lg">
         <thead class="thead-light">
             <tr>
@@ -35,7 +39,9 @@
         <tbody>
         </tbody>
     </table>
-    
+   </div>
+  </div>
+</div>  
     
 <script th:inline="javascript">
 var modalesectiondata = null;
