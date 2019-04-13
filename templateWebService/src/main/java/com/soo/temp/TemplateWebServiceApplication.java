@@ -9,11 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHttpSession;
 
 import com.soo.temp.repo.BookRepository;
 import com.soo.temp.vo.Book;
 
 @SpringBootApplication
+@EnableJdbcHttpSession
 @MapperScan(basePackages = "com.soo.temp.map")
 public class TemplateWebServiceApplication extends SpringBootServletInitializer {
 	private static final Logger log = LoggerFactory.getLogger(TemplateWebServiceApplication.class);
